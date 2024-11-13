@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人博客</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #37352f;
+            background-color: #ffffff;
+        }
+
+        .header {
+            height: 300px;
+            background-image: url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -60px;
+            left: 50px;
+            border: 4px solid white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px 40px;
+        }
+
+        .intro {
+            margin-bottom: 60px;
+        }
+
+        .intro h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #6b6b6b;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            margin: 0 0 10px 0;
+        }
+
+        .project-info p {
+            margin: 0;
+            color: #6b6b6b;
+        }
+
+        .social-links {
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 15px;
+            color: #37352f;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: #2eaadc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="你的头像URL" alt="个人头像" class="avatar">
+    </div>
+
+    <div class="container">
+        <div class="intro">
+            <h1>你的名字</h1>
+            <p>这里是你的个人介绍。可以描述你的专业背景、兴趣爱好、技能特长等。保持简洁清晰，让访客快速了解你。</p>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <img src="项目图片URL" alt="项目1" class="project-image">
+                <div class="project-info">
+                    <h3>项目名称</h3>
+                    <p>项目简介描述，简单介绍项目的主要功能和特点。</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="项目图片URL" alt="项目2" class="project-image">
+                <div class="project-info">
+                    <h3>项目名称</h3>
+                    <p>项目简介描述，简单介绍项目的主要功能和特点。</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="项目图片URL" alt="项目3" class="project-image">
+                <div class="project-info">
+                    <h3>项目名称</h3>
+                    <p>项目简介描述，简单介绍项目的主要功能和特点。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+            <a href="#">微博</a>
+        </div>
+    </div>
+</body>
+
+</html>
